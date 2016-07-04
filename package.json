@@ -1,9 +1,11 @@
 {
   "name": "to-do",
   "version": "1.0.0",
-  "description": "Front-end To-Do list",
+  "description": "Front-end To-Do List application",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "mocha": "^2.5.3"
+  },
   "devDependencies": {
     "mocha": "^2.5.3"
   },
