@@ -4,7 +4,9 @@
   "description": "Front-end To-Do List application",
   "main": "index.js",
   "dependencies": {
-    "mocha": "^2.5.3"
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4"
   },
   "devDependencies": {
     "mocha": "^2.5.3"
