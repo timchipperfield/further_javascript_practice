@@ -1,0 +1,19 @@
+{
+  "name": "to-do",
+  "version": "1.0.0",
+  "description": "Front-end To-do list",
+  "main": "index.js",
+  "scripts": {
+    "test": "(mocha)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronepstein/to-do.git"
+  },
+  "author": "Cameron Epstein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cameronepstein/to-do/issues"
+  },
+  "homepage": "https://github.com/cameronepstein/to-do#readme"
+}
