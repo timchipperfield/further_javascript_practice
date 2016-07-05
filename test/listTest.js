@@ -1,6 +1,7 @@
 var expect = require('chai').expect;
-var List = require('../lib/list.js');
-var Task = require('../lib/task.js');
+var sinon = require('sinon');
+var List = require('../lib/models/list.js');
+var Task = require('../lib/models/task.js');
 
 describe('List', function() {
   var list;
@@ -10,7 +11,7 @@ describe('List', function() {
   });
 
   it('stores a new task', function() {
-    var callGrandma = new Task('call grandma');
+    var callGrandma = sinon.mock(Task);
     list.addItem(callGrandma);
     expect(list.items().pop()).to.eq(callGrandma);
   });

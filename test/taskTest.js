@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var Task = require('../lib/task.js');
+var Task = require('../lib/models/task.js');
 
 describe('Task', function() {
   var task;
@@ -13,11 +13,12 @@ describe('Task', function() {
   });
 
   it('should return a boolean', function() {
-    expect(task.status()).to.be.a('boolean')
+    expect(task.status()).to.be.a('boolean');
   });
 
   it('should be able to mark complete', function() {
     task.finish();
     expect(task.status()).to.equal(true);
   });
+
 });
