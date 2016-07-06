@@ -15,15 +15,11 @@
       };
     </script>
   </head>
-  <body onload='listItems()'>
+  <body onload="listItems()">
     <h1>To Do List</h1>
-    <div id='target'>Loading List...</div>
-    <script id='template' type='x-tmpl-mustache'>
-      <ul>
-        {{#tasks}}
-        <li>{{_task}}</li>
-        {{/tasks}}
-      </ul>
+    <div id="target">Loading List...</div>
+    <script id="template" type="x-tmpl-mustache"></script>
+    <script type="text/javascript" src="index.js"></script>
     </script>
   </body>
 </html>
