@@ -22,9 +22,9 @@ describe('title page', function() {
   });
 
   it('contains some todos', function() {
-    var list = new List();
-    var task = new Task('call grandma');
-    list.addItem(task);
+    browser.assert.status(200);
+    browser.fill('new_task', 'call grandma');
+    browser.pressButton('submit');
     browser.assert.text('li', 'call grandma');
   });
 });

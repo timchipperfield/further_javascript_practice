@@ -1,16 +1,27 @@
-"use strict";
+
 
 window.addEventListener("load", function() {
-  var new_list = new List();
+  new_list = new List();
   // var task1 = new Task("call grandma");
   // new_list.addItem(task1);
-  document.getElementById('list').innerHTML = new_list.toHtml();
-  document.getElementById("form").addEventListener("submit", myFunction);
-  function myFunction(evt) {
-     alert("The form was submitted");
-     evt.preventDefault();
-  }
+  // document.getElementById("form").addEventListener("submit", myFunction);
+  // function myFunction(evt) {
+  //    evt.preventDefault();
+  // }
 });
+
+function addTask(){
+  var newItem = document.getElementById("task_input").value
+  console.log('=========1')
+  console.log(newItem)
+  new_list.addItem(newItem)
+  console.log('=========2')
+  console.log(new_list._list)
+  document.getElementById('list').innerHTML = new_list.toHtml();
+}
+
+
+
 
 
 // var task2 = new Task("feed the hog");
