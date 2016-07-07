@@ -16,18 +16,12 @@ describe('List', function() {
   });
 
   it('stores a new task', function() {
-    // let callGrandma = sinon.createStubInstance(Task);
-    console.log('=========1')
-    list.addItem('callGrandma');
-    console.log('========2')
-    expect(list.items().pop()).to.eq(callGrandma);
+    list.addItem('call grandma');
+    expect(list.items().pop()._task).to.eq('call grandma');
   });
 
   it('provides an unordered list of all the tasks added', function() {
-    let callGrandma = sinon.createStubInstance(Task);
-    callGrandma._task = 'call grandma';
-
-    list.addItem(callGrandma);
+    list.addItem('call grandma');
     var template = '<ul><li id="list_0">call grandma</li></ul>';
     expect(list.toHtml()).html.to.eq(template);
   });

@@ -1,5 +1,4 @@
 
-
 window.addEventListener("load", function() {
   new_list = new List(Task);
   // var task1 = new Task("call grandma");
