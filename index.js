@@ -1,7 +1,7 @@
 
 
 window.addEventListener("load", function() {
-  new_list = new List();
+  new_list = new List(Task);
   // var task1 = new Task("call grandma");
   // new_list.addItem(task1);
   // document.getElementById("form").addEventListener("submit", myFunction);
