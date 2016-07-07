@@ -21,10 +21,17 @@ describe('title page', function() {
     browser.assert.text('h1', 'To Do List');
   });
 
-  it('contains some todos', function() {
+  it('adds some todos', function() {
     browser.assert.status(200);
     browser.fill('new_task', 'call grandma');
     browser.pressButton('submit');
     browser.assert.text('li', 'call grandma');
+  });
+
+  it('should mark tasks as complete', function() {
+    browser.fill('new_task', 'call grandma');
+    browser.pressButton('submit');
+    browser.pressButton('complete');
+    browser.assert.hasClass('li', 'completed');
   });
 });
