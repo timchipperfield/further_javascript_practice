@@ -12,12 +12,14 @@ describe('List', function() {
   var list;
 
   beforeEach(function() {
-    list = new List();
+    list = new List(Task);
   });
 
   it('stores a new task', function() {
-    let callGrandma = sinon.createStubInstance(Task);
-    list.addItem(callGrandma);
+    // let callGrandma = sinon.createStubInstance(Task);
+    console.log('=========1')
+    list.addItem('callGrandma');
+    console.log('========2')
     expect(list.items().pop()).to.eq(callGrandma);
   });
 

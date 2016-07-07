@@ -12,11 +12,7 @@ window.addEventListener("load", function() {
 
 function addTask(){
   var newItem = document.getElementById("task_input").value
-  console.log('=========1')
-  console.log(newItem)
-  new_list.addItem(newItem)
-  console.log('=========2')
-  console.log(new_list._list)
+  new_list.addItem(newItem);
   document.getElementById('list').innerHTML = new_list.toHtml();
 }
 
