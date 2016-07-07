@@ -1,7 +1,8 @@
 var app = require("http-server").createServer();
-var assert = require('assert');
+var assert = require('assert').assert;
 var Browser = require('zombie');
-var List = require('../lib/models/list.js');
+var List = require('../lib/models/list.js').List;
+var Task = require('../lib/models/task.js').Task;
 
 describe('title page', function() {
   before(function() {
@@ -22,7 +23,8 @@ describe('title page', function() {
 
   it('contains some todos', function() {
     var list = new List();
-    list.addItem('call grandma');
+    var task = new Task('call grandma');
+    list.addItem(task);
     browser.assert.text('li', 'call grandma');
   });
 });

@@ -4,7 +4,7 @@
  */
 
 /*global define: false Mustache: true*/
-
+(function(exports) {
 (function defineMustache (global, factory) {
   if (typeof exports === 'object' && exports && typeof exports.nodeName !== 'string') {
     factory(exports); // CommonJS
@@ -627,3 +627,5 @@
   mustache.Writer = Writer;
 
 }));
+exports.mustache = mustache;
+})(this);

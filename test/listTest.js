@@ -2,8 +2,9 @@ var chai = require('chai');
 var expect = require('chai').expect;
 var chaiHtml = require('chai-html');
 var sinon = require('sinon');
-var List = require('../lib/models/list.js');
-var Task = require('../lib/models/task.js');
+
+var List = require('../lib/models/list.js').List;
+var Task = require('../lib/models/task.js').Task;
 
 chai.use(chaiHtml);
 
@@ -25,11 +26,7 @@ describe('List', function() {
     callGrandma._task = 'call grandma';
 
     list.addItem(callGrandma);
-    var template = `
-        <ul>
-          <li>call grandma</li>
-        </ul>
-    `;
-    expect(list.toHtml()).html.to.eq(template)
+    var template = '<ul><li id="list_0">call grandma</li></ul>';
+    expect(list.toHtml()).html.to.eq(template);
   });
 });
