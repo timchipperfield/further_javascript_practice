@@ -6,10 +6,10 @@ window.addEventListener("load", function() {
 function addTask(){
   var newItem = document.getElementById("task_input").value
   new_list.addItem(newItem);
+  // console.log(new_list);
   document.getElementById('list').innerHTML = new_list.toHtml();
-}
+};
 
-function complete(i){
-  console.log(i)
-
-}
+function complete(){
+  var taskToComplete = document.getElementById("'list_"+i+"'")
+};

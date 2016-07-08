@@ -13,7 +13,7 @@ describe('Task', function() {
   });
 
   it('should return a boolean', function() {
-    expect(task.status()).to.be.a('boolean');
+    expect(task.status()).to.be.a('string');
   });
 
   it('should be able to mark complete', function() {
