@@ -10,7 +10,7 @@ function addTask(){
   document.getElementById('list').innerHTML = new_list.toHtml();
 };
 
-
-function complete(){
-  var taskToComplete = document.getElementById("'list_"+i+"'")
+function complete(i){
+  new_list._list[i].finish();
+  document.getElementById('list').innerHTML = new_list.toHtml();
 };

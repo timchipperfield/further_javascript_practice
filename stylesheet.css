@@ -1,0 +1,11 @@
+.completed {
+  text-decoration: line-through;
+}
+
+#submit {
+  display: none;
+}
+
+  body {
+    background-color: pink;
+  }

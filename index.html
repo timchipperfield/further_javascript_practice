@@ -3,13 +3,14 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href='stylesheet.css'>
     <title>Task List</title>
   </head>
   <body>
     <h1>To Do List</h1>
       <div id="list"></div>
       <input id="task_input" type="text" name="new_task">
-      <input id="submit" type="submit" name="submit" onclick="addTask()" value="Add Task">
+      <input id="addTask" type="submit" name="submit" onclick="addTask()" value="Add Task">
   </body>
     <script src='./lib/models/list.js'></script>
     <script src='./lib/models/task.js'></script>
